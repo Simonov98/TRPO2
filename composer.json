@@ -1,0 +1,17 @@
+{
+  "name": "simonov98/trpo2",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Simonov Ilya",
+      "email": "pydelok178@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "trpo2\\": ""
+    }
+  }
+}
