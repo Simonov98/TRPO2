@@ -9,10 +9,11 @@ class MyLog extends LogAbstract implements LogInterface{
     public function _log(string $str){
         $this->log[] = $str;
     }
-    public static function log($str) {
+    public static function log($str):void {
         self::Instance()->_log($str);
     }
-    public function _write(){
+    public function _write()
+    {
 
         $d = new DateTime();
         $filename = "log/".$d->format('d.m.Y_T_H.i.s.u').".log";
@@ -35,12 +36,7 @@ class MyLog extends LogAbstract implements LogInterface{
 
     }
 
-    public function _write(){
-        foreach($this->log as $value) {
-            echo $value;
-        }
-    }
-    public static function write(){
+    public static function write():void{
         self::Instance()->_write();
     }
 }

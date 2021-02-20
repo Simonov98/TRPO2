@@ -8,10 +8,12 @@
     }
   ],
   "minimum-stability": "dev",
-  "require": {},
   "autoload": {
     "psr-4": {
       "trpo2\\": ""
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
   }
 }
